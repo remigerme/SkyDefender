@@ -24,7 +24,8 @@ public class CommandTeam implements CommandExecutor {
 			if(args[0].equalsIgnoreCase("size")) {
 				if(args.length >= 2) {
 					main.setTeamSize(Integer.parseInt(args[1]));
-					sender.sendMessage("Team size set.");
+					main.setTeamDefenderSize(Integer.parseInt(args[1]) + 2);
+					sender.sendMessage("Team size set (/team size to check).");
 				} else {
 					sender.sendMessage("Team size : " + main.getTeamSize());
 				}

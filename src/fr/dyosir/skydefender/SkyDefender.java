@@ -288,6 +288,10 @@ public class SkyDefender extends JavaPlugin {
 	public void setTeamSize(int teamSize) {
 		this.teamSize = teamSize;
 	}
+	
+	public void setTeamDefenderSize(int teamDefenderSize) {
+		this.teamDefenderSize = teamDefenderSize;
+	}
 
 	public String getWorldName() {
 		return worldName;
