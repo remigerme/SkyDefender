@@ -1,0 +1,21 @@
+name: SkyDefender
+version: 1.0.0
+author: Dyosir
+main: fr.dyosir.skydefender.SkyDefender
+commands:
+  pos:
+    description: Allow you to set the position of the tp, the banner and the defender spawn.
+    permission: pos.use
+    usage: /pos <tp1/tp2/banner/defenderspawn>
+  rules:
+    description: Allow you to change the settings of the game.
+    permission: rules.use
+    usage: /rules <nohunger/spectatormode/friendlyfire/pvpcap/bannercap>
+  game:
+    description: Start or reset the game.
+    permission: game.use
+    usage: /game <start/reset>
+  team:
+    description: Manage the teams (size, add or remove a player, make random teams or toggle solo mode).
+    permission: team.use
+    usage: /team <size/add/remove/random/solo>

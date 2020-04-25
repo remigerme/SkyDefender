@@ -1,0 +1,46 @@
+teams:
+  red:
+    name: "Red"
+    color: "§4"
+    data: 14
+  blue:
+    name: "Blue"
+    color: "§1"
+    data: 11
+  yellow:
+    name: "Yellow"
+    color: "§e"
+    data: 4
+  green:
+    name: "Green"
+    color: "§2"
+    data: 13
+  orange:
+    name: "Orange"
+    color: "§6"
+    data: 1
+  pink:
+    name: "Pink"
+    color: "§d"
+    data: 6
+  gray:
+    name: "Gray"
+    color: "§8"
+    data: 7
+  purple:
+    name: "Purple"
+    color: "§5"
+    data: 10
+  cyan:
+    name: "Defender"
+    color: "§b"
+    data: 9
+params:
+  worldname: world
+  teamsize: 4
+  teamdefendersize: 6
+  falldamagecap: 15
+  pvpcap: 1200
+  bannercap: 7200
+  worldwidth: 3000
+  defendertpcd: 30
