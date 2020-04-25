@@ -2,7 +2,7 @@
 
 ## Download & usage
 
-Please refer to the [spigot page](https:) to get an advanced description of what you can modify in the plugin, and to download the jar file.
+Please refer to the [spigot page](https://www.spigotmc.org/resources/skydefender.77938/) to get an advanced description of what you can modify in the plugin, and to download the jar file.
 
 ## Further info
 
