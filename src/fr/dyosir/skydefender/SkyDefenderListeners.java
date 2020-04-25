@@ -252,18 +252,29 @@ public class SkyDefenderListeners implements Listener {
 					}
 				}
 				if(!playerIsDefender) {
-					if(main.isSoloMode()) {
-						main.win(player);
-					} else {
-						Team winner = main.getTeams().get(0);
-						for(Team team: main.getTeams()) {
-							for(Player iplayer: team.getPlayers()) {
-								if(player == iplayer) {
-									winner = team;
-									main.win(winner);
+					boolean defendersAreDead = false;
+					for(Team team: main.getTeams()) {
+						if(team.getName().equalsIgnoreCase("defender") && team.getSize() == 0) {
+							defendersAreDead = true;
+						}
+					}
+					if(defendersAreDead) {
+						if(main.isSoloMode()) {
+							main.win(player);
+						} else {
+							Team winner = main.getTeams().get(0);
+							for(Team team: main.getTeams()) {
+								for(Player iplayer: team.getPlayers()) {
+									if(player == iplayer) {
+										winner = team;
+										main.win(winner);
+									}
 								}
 							}
 						}
+					} else {
+						player.sendMessage("You can't destroy that block");
+						event.setCancelled(true);
 					}
 				}
 			}
