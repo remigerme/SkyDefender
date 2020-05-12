@@ -34,9 +34,7 @@ public class SkyDefenderListeners implements Listener {
 	@EventHandler
 	public void onJoin(PlayerJoinEvent event) {
 		Player player = event.getPlayer();
-		
-		System.out.println(player.getName() + "");
-		
+
 		// reassign the team of the player if he has one before he quits
 		for(Team team: main.getTeams()) {
 			// we have to compare the names
